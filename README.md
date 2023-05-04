@@ -11,4 +11,5 @@ export AWS_SECRET_ACCESS_KEY=axc.....ay2
 $ ./bootstrap.sh
 
 4. 运行clean.sh 清理环境
+
 $ ./clean.sh
