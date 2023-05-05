@@ -15,3 +15,5 @@ $ ./bootstrap.sh
 4. 运行clean.sh 清理环境
 
 $ ./clean.sh
+
+！(https://github.com/jasonliu929/Terraform-WGMesh4gcr/blob/main/Overview.png)
