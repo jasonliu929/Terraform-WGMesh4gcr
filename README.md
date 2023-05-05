@@ -16,8 +16,10 @@ $ sudo -u ubuntu pip install --user -U wg-meshconf -i https://pypi.tuna.tsinghua
 
 $ sudo apt-get update && sudo apt-get install -y gnupg software-properties-common
 
-$ wget -O- https://apt.releases.hashicorp.com/gpg | \
-gpg --dearmor | \
+$ wget -O- https://apt.releases.hashicorp.com/gpg | \\
+
+gpg --dearmor | \\
+
 sudo tee /usr/share/keyrings/hashicorp-archive-keyring.gpg
 
 $ echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
