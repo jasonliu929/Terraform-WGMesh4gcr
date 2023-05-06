@@ -86,6 +86,8 @@ resource "aws_instance" "wg_peer_zhy" {
 #!/bin/bash
 sudo apt-get update
 sudo apt install wireguard -y
+sudo echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+sudo sysctl -p
 EOF
 
   root_block_device {
@@ -221,6 +223,8 @@ resource "aws_instance" "wg_peer_bjs" {
 #!/bin/bash
 sudo apt-get update
 sudo apt install wireguard -y
+sudo echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
+sudo sysctl -p
 EOF
 
   root_block_device {
